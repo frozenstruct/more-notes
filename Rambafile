@@ -1,0 +1,32 @@
+### Headers settings
+company: Eyedropping
+
+### Xcode project settings
+project_name: NotesTest
+xcodeproj_path: NotesTest.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: NotesTest
+
+# The file path for new modules
+project_file_path: NotesTest/Modules
+
+# The Xcode group path to new modules
+project_group_path: NotesTest/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: NotesTestTests
+
+# The file path for new tests
+test_file_path: NotesTestTests/ModuleTests
+
+# The Xcode group path to new tests
+test_group_path: NotesTestTests/ModuleTests
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
