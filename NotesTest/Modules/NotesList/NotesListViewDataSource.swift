@@ -11,56 +11,51 @@ import UIKit
 
 protocol NotesListViewDataSource: UITableViewDataSource {
 
-    func set(notes: [Note])
+	func set(notes: [Note])
 
-    var notesPopulation: [Note] { get }
+	var notesPopulation: [Note] { get }
 }
 
 // MARK: - NotesListViewDataSourceImp
 
 final class NotesListViewDataSourceImp: NSObject, NotesListViewDataSource {
 
-    // MARK: Propeties
+	// MARK: Propeties
 
-    private(set) var notesPopulation: [Note]
+	private(set) var notesPopulation: [Note]
 
-    // MARK: Initialization
+	// MARK: Initialization
 
-    init(notes: [Note] = []) {
-        notesPopulation = notes
-        super.init()
-    }
+	init(notes: [Note] = []) {
+		notesPopulation = notes
+		super.init()
+	}
 
-    func set(notes: [Note]) {
-        self.notesPopulation = notes
-    }
+	func set(notes: [Note]) {
+		self.notesPopulation = notes
+	}
 }
 
 // MARK: - TableView DataSource
 
 extension NotesListViewDataSourceImp: UITableViewDataSource {
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        notesPopulation.count
-    }
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		notesPopulation.count
+	}
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		Constants.rowHeight
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		guard let cell = tableView.dequeueReusableCell(
 			withIdentifier: Constants.noteTableViewCell
-		) as? NoteTableViewCell
+		) as? NoteTableViewCell,
+			  let currentNoteModel = notesPopulation[safe: indexPath.row]
 		else {
 			return UITableViewCell()
 		}
 
-		let currentNoteModel = notesPopulation[indexPath.row]
 		cell.setup(with: currentNoteModel)
-
 		return cell
-    }
+	}
 }
 
 // MARK: - Constants
@@ -69,6 +64,5 @@ extension NotesListViewDataSourceImp {
 
 	private enum Constants {
 		static let noteTableViewCell = "NoteTableViewCell"
-		static let rowHeight: CGFloat = 95
 	}
 }

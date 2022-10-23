@@ -6,6 +6,20 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3F4CA61128FAB74F005CD7F5 /* Periphery */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F4CA61428FAB74F005CD7F5 /* Build configuration list for PBXAggregateTarget "Periphery" */;
+			buildPhases = (
+				3F4CA61528FAB768005CD7F5 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Periphery;
+			productName = Periphery;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		018F5A20445F77819C276003 /* NotesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51D895D2BE2CA714F86E97 /* NotesListRouter.swift */; };
 		2B8156AF13E911929906270F /* NotesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */; };
@@ -36,7 +50,9 @@
 		3F4CA60928F3657E005CD7F5 /* NotesListPresenterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60828F3657E005CD7F5 /* NotesListPresenterMapper.swift */; };
 		3F4CA60B28F3EB7B005CD7F5 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */; };
 		3F4CA60D28F3EF1A005CD7F5 /* ModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */; };
+		3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */; };
 		3FAB47AE3FFF2DA70B08E2C5 /* NotesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39370D58AAE8AA3AC58695D /* NotesListViewTests.swift */; };
+		3FDF5D8529047FEB009023BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDF5D8429047FEB009023BE /* SnapKit */; };
 		44CC95524913793ED02DC5EC /* NotesListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97C38BC0A8D25ADA9741F0 /* NotesListConfiguratorTests.swift */; };
 		8C326BFFCD4D21554343E173 /* NotesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3003D7A318E1C829340F9C5 /* NotesListInteractor.swift */; };
 		98EF8C81A99B3435E146CF3F /* NotesListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D14522A3197AFFB16B6E7D /* NotesListRouterTests.swift */; };
@@ -95,6 +111,7 @@
 		3F4CA60828F3657E005CD7F5 /* NotesListPresenterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListPresenterMapper.swift; sourceTree = "<group>"; };
 		3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleContract.swift; sourceTree = "<group>"; };
+		3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromClass.swift; sourceTree = "<group>"; };
 		4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListPresenter.swift; sourceTree = "<group>"; };
 		4C97C38BC0A8D25ADA9741F0 /* NotesListConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListConfiguratorTests.swift; sourceTree = "<group>"; };
 		611763197B1C9169DEDE1916 /* NotesListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListConfigurator.swift; sourceTree = "<group>"; };
@@ -112,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDF5D8529047FEB009023BE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +284,7 @@
 				3F4CA5F828F35CAA005CD7F5 /* UIView+SafeAnchors.swift */,
 				3F4CA5F928F35CAA005CD7F5 /* UIApplication+TopViewController.swift */,
 				3F4CA5FA28F35CAA005CD7F5 /* Array+SafeIndex.swift */,
+				3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +408,7 @@
 			);
 			name = NotesTest;
 			packageProductDependencies = (
+				3FDF5D8429047FEB009023BE /* SnapKit */,
 			);
 			productName = NotesTest;
 			productReference = 3F4CA58D28F2FC68005CD7F5 /* NotesTest.app */;
@@ -451,6 +471,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 3F4CA58C28F2FC68005CD7F5;
 					};
+					3F4CA61128FAB74F005CD7F5 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 3F4CA58828F2FC68005CD7F5 /* Build configuration list for PBXProject "NotesTest" */;
@@ -463,6 +486,7 @@
 			);
 			mainGroup = 3F4CA58428F2FC68005CD7F5;
 			packageReferences = (
+				3FDF5D8329047FEB009023BE /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 3F4CA58E28F2FC68005CD7F5 /* Products */;
 			projectDirPath = "";
@@ -471,6 +495,7 @@
 				3F4CA58C28F2FC68005CD7F5 /* NotesTest */,
 				3F4CA5A528F2FC6A005CD7F5 /* NotesTestTests */,
 				3F4CA5AF28F2FC6A005CD7F5 /* NotesTestUITests */,
+				3F4CA61128FAB74F005CD7F5 /* Periphery */,
 			);
 		};
 /* End PBXProject section */
@@ -519,6 +544,23 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		3F4CA61528FAB768005CD7F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = " periphery scan --project NotesTest.xcodeproj --schemes NotesTest --targets NotesTest\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -551,6 +593,7 @@
 				3F4CA60D28F3EF1A005CD7F5 /* ModuleContract.swift in Sources */,
 				3F4CA60528F36081005CD7F5 /* NoteModel.swift in Sources */,
 				3F4CA5E528F31C59005CD7F5 /* List+CoreDataProperties.swift in Sources */,
+				3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */,
 				3F4CA5E728F31C59005CD7F5 /* Note+CoreDataProperties.swift in Sources */,
 				3F4CA5E828F31C59005CD7F5 /* Note+CoreDataClass.swift in Sources */,
 			);
@@ -851,6 +894,24 @@
 			};
 			name = Release;
 		};
+		3F4CA61228FAB74F005CD7F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FH9R39U9P3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F4CA61328FAB74F005CD7F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FH9R39U9P3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -890,7 +951,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3F4CA61428FAB74F005CD7F5 /* Build configuration list for PBXAggregateTarget "Periphery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4CA61228FAB74F005CD7F5 /* Debug */,
+				3F4CA61328FAB74F005CD7F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FDF5D8329047FEB009023BE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FDF5D8429047FEB009023BE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FDF5D8329047FEB009023BE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3F4CA59928F2FC68005CD7F5 /* NotesTest.xcdatamodeld */ = {

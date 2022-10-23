@@ -6,12 +6,21 @@
 //
 
 import UIKit
+import SnapKit
 
 // MARK: - NoteTableViewCell
 
 final class NoteTableViewCell: UITableViewCell {
 
 	// MARK: Properties
+
+	private lazy var containerView: UIView = {
+		let view = UIView()
+		view.translatesAutoresizingMaskIntoConstraints = false
+		view.layer.cornerRadius = Constants.cornerRadius
+		view.backgroundColor = .purple
+		return view
+	}()
 
 	private lazy var titleLabel: UILabel = {
 		let label = UILabel()
@@ -37,6 +46,7 @@ final class NoteTableViewCell: UITableViewCell {
 
 		addSubviews()
 		constrainSubviews()
+		setUIDetails()
 	}
 
 	@available(*, unavailable)
@@ -54,22 +64,35 @@ final class NoteTableViewCell: UITableViewCell {
 	}
 
 	private func addSubviews() {
+		contentView.addSubview(containerView)
+
 		[titleLabel, bodyLabel].forEach {
 			$0.translatesAutoresizingMaskIntoConstraints = false
-			contentView.addSubview($0)
+			containerView.addSubview($0)
 		}
 	}
 
 	private func constrainSubviews() {
-		NSLayoutConstraint.activate([
-			titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
-			titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
-			titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+		containerView.snp.makeConstraints {
+			$0.center.equalToSuperview()
+			$0.width.equalToSuperview().inset(10)
+			$0.height.equalTo(Constants.containerHeight)
+		}
+		titleLabel.snp.makeConstraints {
+			$0.height.equalTo(38)
+			$0.top.equalToSuperview().inset(25)
+			$0.left.equalToSuperview().inset(35)
+			$0.right.equalToSuperview().inset(35)
+		}
+		bodyLabel.snp.makeConstraints {
+			$0.top.equalTo(titleLabel.snp.bottom).offset(10)
+			$0.left.equalToSuperview().inset(35)
+			$0.right.equalToSuperview().inset(35)
+		}
+	}
 
-			bodyLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-			bodyLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
-			bodyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5)
-		])
+	private func setUIDetails() {
+		self.contentView.layer.cornerRadius = Constants.cornerRadius
 	}
 }
 
@@ -78,6 +101,8 @@ final class NoteTableViewCell: UITableViewCell {
 extension NoteTableViewCell {
 
 	private enum Constants {
-		static let cellTitleFontSize = 17.0
+		static let cellTitleFontSize: CGFloat = 17
+		static let cornerRadius: CGFloat = 50
+		static let containerHeight: CGFloat = 150
 	}
 }

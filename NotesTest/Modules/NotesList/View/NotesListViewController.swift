@@ -60,17 +60,3 @@ extension NotesListViewController: NotesListViewOutput {
 		output.didLoad()
 	}
 }
-
-// MARK: - Table View
-
-extension NotesListViewController: UITableViewDelegate { }
-
-extension NotesListViewController: UITableViewDataSource {
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		1
-	}
-
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		UITableViewCell()
-	}
-}

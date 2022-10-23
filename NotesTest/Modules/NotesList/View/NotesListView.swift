@@ -21,9 +21,10 @@ final class NotesListView: UIView {
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		tableView.delegate = tableViewDelegate
 		tableView.dataSource = tableViewDataSource
+		tableView.separatorStyle = .none
 		tableView.register(
 			NoteTableViewCell.self,
-			forCellReuseIdentifier: Constants.noteTableViewCell
+			forCellReuseIdentifier: getString(from: NoteTableViewCell.self)
 		)
 		tableView.rowHeight = Constants.rowHeight
 		tableView.estimatedRowHeight = Constants.rowHeight
@@ -85,7 +86,6 @@ extension NotesListView: NotesListViewInput {
 extension NotesListView {
 
 	private enum Constants {
-		static let rowHeight: CGFloat = 65
-		static let noteTableViewCell = "NoteTableViewCell"
+		static let rowHeight: CGFloat = 200
 	}
 }
