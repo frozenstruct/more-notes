@@ -7,18 +7,47 @@
 
 // MARK: - NotesListPresenterMapper
 
-final class NotesListPresenterMapper { }
+import UIKit
+
+final class NotesListPresenterMapper {
+
+	typealias NoteModel = NotesListPresenterModel.Note
+	typealias ViewModel = NotesListViewModel
+}
 
 // MARK: - Methods
 
 extension NotesListPresenterMapper {
 
-	func model(notes: [Note]) -> NotesListViewModel {
-		NotesListViewModel(notes: notes)
+	func model(notes: [NoteModel]) -> NotesListViewModel {
+		NotesListViewModel(
+			cells: notes.map {
+				ViewModel.Cell(
+					title: $0.,
+					body: <#T##String#>,
+					backgroundColor: <#T##UIColor#>,
+					patternColor: <#T##UIColor#>,
+					font: <#T##UIFont#>
+				)
+			}
+		)
 	}
 }
 
 struct NotesListViewModel {
 
-	var notes: [Note]
+	let cells: [Cell]
+
+}
+
+extension NotesListViewModel {
+
+	struct Cell {
+
+		let title: String
+		let body: String
+		let backgroundColor: UIColor
+		let patternColor: UIColor
+		let font: UIFont
+	}
 }

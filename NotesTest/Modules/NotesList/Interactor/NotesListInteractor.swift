@@ -32,7 +32,7 @@ extension NotesListInteractor: NotesListInteractorInput {
 			guard let notes = notes as? [Note] else { return }
 			self.output.didLoad(
 				with:
-					self.mapper.model(notes: notes)
+					self.mapper.presenterModel(notes: notes)
 			)
 		}
 	}

@@ -53,6 +53,8 @@
 		3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */; };
 		3FAB47AE3FFF2DA70B08E2C5 /* NotesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39370D58AAE8AA3AC58695D /* NotesListViewTests.swift */; };
 		3FDF5D8529047FEB009023BE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDF5D8429047FEB009023BE /* SnapKit */; };
+		3FDF5D87290588DC009023BE /* NotesListPresenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF5D86290588DC009023BE /* NotesListPresenterModel.swift */; };
+		3FDF5D892905CAE8009023BE /* String+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF5D882905CAE8009023BE /* String+Strings.swift */; };
 		44CC95524913793ED02DC5EC /* NotesListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C97C38BC0A8D25ADA9741F0 /* NotesListConfiguratorTests.swift */; };
 		8C326BFFCD4D21554343E173 /* NotesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3003D7A318E1C829340F9C5 /* NotesListInteractor.swift */; };
 		98EF8C81A99B3435E146CF3F /* NotesListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D14522A3197AFFB16B6E7D /* NotesListRouterTests.swift */; };
@@ -112,6 +114,8 @@
 		3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleContract.swift; sourceTree = "<group>"; };
 		3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromClass.swift; sourceTree = "<group>"; };
+		3FDF5D86290588DC009023BE /* NotesListPresenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListPresenterModel.swift; sourceTree = "<group>"; };
+		3FDF5D882905CAE8009023BE /* String+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Strings.swift"; sourceTree = "<group>"; };
 		4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListPresenter.swift; sourceTree = "<group>"; };
 		4C97C38BC0A8D25ADA9741F0 /* NotesListConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListConfiguratorTests.swift; sourceTree = "<group>"; };
 		611763197B1C9169DEDE1916 /* NotesListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotesListConfigurator.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			children = (
 				4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */,
 				3F4CA60828F3657E005CD7F5 /* NotesListPresenterMapper.swift */,
+				3FDF5D86290588DC009023BE /* NotesListPresenterModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				3F4CA5F928F35CAA005CD7F5 /* UIApplication+TopViewController.swift */,
 				3F4CA5FA28F35CAA005CD7F5 /* Array+SafeIndex.swift */,
 				3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */,
+				3FDF5D882905CAE8009023BE /* String+Strings.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -568,12 +574,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDF5D87290588DC009023BE /* NotesListPresenterModel.swift in Sources */,
 				3F4CA59128F2FC68005CD7F5 /* AppDelegate.swift in Sources */,
 				3F4CA59328F2FC68005CD7F5 /* SceneDelegate.swift in Sources */,
 				3F4CA59B28F2FC68005CD7F5 /* NotesTest.xcdatamodeld in Sources */,
 				3F4CA5E628F31C59005CD7F5 /* List+CoreDataClass.swift in Sources */,
 				3F4CA5FD28F35CAA005CD7F5 /* UIApplication+TopViewController.swift in Sources */,
 				3F4CA60328F36053005CD7F5 /* NotesListViewDataSource.swift in Sources */,
+				3FDF5D892905CAE8009023BE /* String+Strings.swift in Sources */,
 				3F4CA5F428F35C33005CD7F5 /* NotesStore.swift in Sources */,
 				3F4CA5F028F35809005CD7F5 /* Dependency.swift in Sources */,
 				3F4CA5F528F35C33005CD7F5 /* CoreDataService.swift in Sources */,

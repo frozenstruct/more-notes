@@ -9,18 +9,26 @@ import Foundation
 
 // MARK: - NotesListInteractorMapper
 
-final class NotesListInteractorMapper { }
+final class NotesListInteractorMapper {
+
+	typealias PresenterModel = NotesListPresenterModel
+	typealias NoteRenderConfiguration = PresenterModel.Note
+}
 
 // MARK: - Methods
 
 extension NotesListInteractorMapper {
-
-	func model(notes: [Note]) -> NotesListPresenterModel {
-		NotesListPresenterModel(notes: notes)
+	
+	func presenterModel(notes: [Note]) -> NotesListPresenterModel {
+		PresenterModel(
+			notes:
+				notes.map {
+					NoteRenderConfiguration(
+						title: $0.name ?? .emptyString,
+						body: $0.bodyText ?? .emptyString,
+						noteColors: .bark(.lightIncreased)
+					)
+				}
+		)
 	}
-}
-
-struct NotesListPresenterModel {
-
-	var notes: [Note]
 }
