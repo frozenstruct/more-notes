@@ -84,25 +84,6 @@ extension UIView {
         return centerYAnchor.constraint(equalTo: view.centerYAnchor)
     }
 
-    /// Centers view horizontally between two provided anchors
-    /// - Parameters:
-    ///   - top: leading anchor to center
-    ///   - bottom: trailing anchor to center
-    /// - Returns: constraint to activate to make view centred
-    func centerHorizontally(
-		between leading: NSLayoutXAxisAnchor,
-		and trailing: NSLayoutXAxisAnchor
-	) -> NSLayoutConstraint {
-        let view = UIView()
-
-        addSubview(view)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.leadingAnchor.constraint(equalTo: leading).isActive = true
-        view.trailingAnchor.constraint(equalTo: trailing).isActive = true
-
-        return centerXAnchor.constraint(equalTo: view.centerXAnchor)
-    }
-
     /// `true` if device's screen size is relatively small (iPhone SE 1st Gen / iPod Touch 7th Gen)
     var isSmallScreen: Bool {
         return UIScreen.main.bounds.height <= 568

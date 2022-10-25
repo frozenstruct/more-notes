@@ -11,16 +11,51 @@ import UIKit
 
 extension UIColor {
 
-    static let bark = UIColor(named: "bark")
-    static let barkLI = UIColor(named: "barkLI")
-    static let barkLR = UIColor(named: "barkLR")
-    static let leaf = UIColor(named: "leaf")
-    static let leafLI = UIColor(named: "leafLI")
-    static let leafLR = UIColor(named: "leafLR")
-    static let skies = UIColor(named: "skies")
-    static let skiesLI = UIColor(named: "skiesLI")
-    static let skiesLR = UIColor(named: "skiesLR")
-    static let sun = UIColor(named: "sun")
-    static let sunLI = UIColor(named: "sunLI")
-    static let sunLR = UIColor(named: "sunLR")
+    static var bark: UIColor     {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.6)
+    }
+
+    static var barkLI: UIColor   {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.4)
+    }
+
+    static var barkLR: UIColor   {
+        UIColor(named: #function) ?? .black
+    }
+
+    static var leaf: UIColor     {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.6)
+    }
+
+    static var leafLI: UIColor   {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.4)
+    }
+
+    static var leafLR: UIColor   {
+        UIColor(named: #function) ?? .black
+    }
+
+    static var skies: UIColor    {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.6)
+    }
+
+    static var skiesLI: UIColor  {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.4)
+    }
+
+    static var skiesLR: UIColor  {
+        UIColor(named: #function) ?? .black
+    }
+
+    static var sun: UIColor      {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.6)
+    }
+
+    static var sunLI: UIColor    {
+        UIColor(named: #function) ?? .black.withAlphaComponent(0.4)
+    }
+
+    static var sunLR: UIColor    {
+        UIColor(named: #function) ?? .black
+    }
 }

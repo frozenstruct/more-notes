@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		_ application: UIApplication,
 		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 	) -> Bool {
-		true
+        let note = Note(context: persistentContainer.viewContext)
+        note.name = "fwoiwefioj"
+        note.bodyText = "oafdifioe"
+
+		return true
 	}
 
 	// MARK: UISceneSession Lifecycle
@@ -25,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		configurationForConnecting connectingSceneSession: UISceneSession,
 		options: UIScene.ConnectionOptions
 	) -> UISceneConfiguration {
-		return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+		UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
 	}
 
 	func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) { }

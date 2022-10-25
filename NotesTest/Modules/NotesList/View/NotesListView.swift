@@ -77,7 +77,7 @@ extension NotesListView {
 extension NotesListView: NotesListViewInput {
 
 	func didLoad(with model: NotesListViewModel) {
-		tableViewDataSource?.set(notes: model.notes)
+		tableViewDataSource?.set(notes: model.cells)
 	}
 }
 

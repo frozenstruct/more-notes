@@ -11,27 +11,29 @@ import UIKit
 
 protocol NotesListViewDataSource: UITableViewDataSource {
 
-	func set(notes: [Note])
+	func set(notes: [NotesListViewModel.Cell])
 
-	var notesPopulation: [Note] { get }
+	var notesPopulation: [NotesListViewModel.Cell] { get }
 }
 
 // MARK: - NotesListViewDataSourceImp
 
 final class NotesListViewDataSourceImp: NSObject, NotesListViewDataSource {
 
+    typealias Cell = NotesListViewModel.Cell
+
 	// MARK: Propeties
 
-	private(set) var notesPopulation: [Note]
+	private(set) var notesPopulation: [Cell]
 
 	// MARK: Initialization
 
-	init(notes: [Note] = []) {
+    init(notes: [Cell] = []) {
 		notesPopulation = notes
 		super.init()
 	}
 
-	func set(notes: [Note]) {
+	func set(notes: [Cell]) {
 		self.notesPopulation = notes
 	}
 }
@@ -53,7 +55,7 @@ extension NotesListViewDataSourceImp: UITableViewDataSource {
 			return UITableViewCell()
 		}
 
-		cell.setup(with: currentNoteModel)
+		cell.render(with: currentNoteModel)
 		return cell
 	}
 }

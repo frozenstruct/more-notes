@@ -25,17 +25,17 @@ final class NoteTableViewCell: UITableViewCell {
 	private lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.font = .monospacedSystemFont(
-			ofSize: Constants.cellTitleFontSize,
-			weight: .bold
-		)
+        label.font = .header
 		return label
 	}()
 
-	private lazy var bodyLabel = UILabel()
-	private lazy var tagLabel = UILabel()
-	private lazy var listLabel = UILabel()
-
+	private lazy var bodyLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .footer
+        return label
+    }()
+    
 	// MARK: Initialization
 
 	override init(
@@ -56,11 +56,10 @@ final class NoteTableViewCell: UITableViewCell {
 
 	// MARK: Methods
 
-	func setup(with model: Note) {
-		self.titleLabel.text = model.name
-		self.bodyLabel.text = model.bodyText
-		self.tagLabel.text = "''"
-		self.listLabel.text = ""
+    func render(with model: NotesListViewModel.Cell) {
+		titleLabel.text = model.title
+		bodyLabel.text = model.body
+        containerView.backgroundColor = model.backgroundColor
 	}
 
 	private func addSubviews() {
