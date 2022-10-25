@@ -22,11 +22,14 @@ extension NotesListPresenterMapper {
     func model(notes: [NoteModel]) -> NotesListViewModel {
         NotesListViewModel(
             cells: notes.map {
-                ViewModel.Cell(
+                let bgColorString = $0.backgroundColor.rawValue
+                let ptrnColorString = "\($0.backgroundColor.rawValue)\($0.patternColor.rawValue)"
+
+                return NotesListViewModel.Cell(
                     title: $0.title,
                     body: $0.body,
-                    backgroundColor: .sun,
-                    patternColor: .sunLI
+                    backgroundColor: UIColor(named: bgColorString) ?? .defaultColor,
+                    patternColor: UIColor(named: ptrnColorString) ?? .defaultColor
                 )
             }
         )

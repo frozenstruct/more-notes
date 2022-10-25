@@ -8,36 +8,41 @@
 // MARK: - NotesListPresenterModel
 
 struct NotesListPresenterModel {
-	let notes: [Self.Note]
+    
+    let notes: [Self.Note]
 }
 
 // MARK: - NotePresentationConfiguration
 
 extension NotesListPresenterModel {
 
-	// MARK: Config
+    // MARK: Config
 
-	/// Declares how the note will be rendered
-	struct Note {
-		let title: String
-		let body: String
-		let noteColors: Color
-	}
+    /// Declares how the note will be rendered
+    struct Note {
 
-	// MARK: ColorType
+        let title: String
+        let body: String
+        let backgroundColor: Color
+        let patternColor: PatternColor
+    }
 
-	/// Sets note cell background color alongside with pattern color
-	enum Color {
-		case skies(PatternColor)
-		case leaf(PatternColor)
-		case sun(PatternColor)
-		case bark(PatternColor)
-	}
+    // MARK: ColorType
 
-	// MARK: PatternColorType
+    /// Sets note cell background color alongside with pattern color
+    enum Color: String, CaseIterable {
+        
+        case skies
+        case leaf
+        case sun
+        case bark
+    }
 
-	/// Sets color of the fancy background pattern
-	enum PatternColor {
-		case lightIncreased, lightReduced
-	}
+    // MARK: PatternColorType
+
+    /// Sets color of the fancy background pattern
+    enum PatternColor: String, CaseIterable {
+
+        case LI, LR
+    }
 }

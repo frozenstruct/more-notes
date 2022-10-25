@@ -15,11 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		_ application: UIApplication,
 		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 	) -> Bool {
-        let note = Note(context: persistentContainer.viewContext)
-        note.name = "fwoiwefioj"
-        note.bodyText = "oafdifioe"
-
-		return true
+        true
 	}
 
 	// MARK: UISceneSession Lifecycle

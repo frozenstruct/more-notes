@@ -12,6 +12,8 @@ import Foundation
 final class NotesListInteractorMapper {
 
 	typealias PresenterModel = NotesListPresenterModel
+    typealias BackgroundColor = PresenterModel.Color
+    typealias PatternColor = PresenterModel.PatternColor
 	typealias NoteRenderConfiguration = PresenterModel.Note
 }
 
@@ -24,10 +26,11 @@ extension NotesListInteractorMapper {
 			notes:
 				notes.map {
 					NoteRenderConfiguration(
-						title: $0.name ?? .emptyString,
-						body: $0.bodyText ?? .emptyString,
-						noteColors: .bark(.lightIncreased)
-					)
+                        title: $0.name ?? .emptyString,
+                        body: $0.bodyText ?? .emptyString,
+                        backgroundColor: BackgroundColor.allCases.randomElement()!,
+                        patternColor: PatternColor.allCases.randomElement()!
+                    )
 				}
 		)
 	}
