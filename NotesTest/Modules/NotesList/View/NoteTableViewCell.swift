@@ -100,7 +100,6 @@ final class NoteTableViewCell: UITableViewCell {
 extension NoteTableViewCell {
 
 	private enum Constants {
-		static let cellTitleFontSize: CGFloat = 17
 		static let cornerRadius: CGFloat = 50
 		static let containerHeight: CGFloat = 150
 	}

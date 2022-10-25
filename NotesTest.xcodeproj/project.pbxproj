@@ -6,20 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		3F4CA61128FAB74F005CD7F5 /* Periphery */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 3F4CA61428FAB74F005CD7F5 /* Build configuration list for PBXAggregateTarget "Periphery" */;
-			buildPhases = (
-				3F4CA61528FAB768005CD7F5 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Periphery;
-			productName = Periphery;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		018F5A20445F77819C276003 /* NotesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51D895D2BE2CA714F86E97 /* NotesListRouter.swift */; };
 		2B8156AF13E911929906270F /* NotesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */; };
@@ -45,7 +31,6 @@
 		3F4CA5FE28F35CAA005CD7F5 /* Array+SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA5FA28F35CAA005CD7F5 /* Array+SafeIndex.swift */; };
 		3F4CA60028F35CE8005CD7F5 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA5FF28F35CE8005CD7F5 /* CoreDataError.swift */; };
 		3F4CA60328F36053005CD7F5 /* NotesListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60228F36053005CD7F5 /* NotesListViewDataSource.swift */; };
-		3F4CA60528F36081005CD7F5 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60428F36081005CD7F5 /* NoteModel.swift */; };
 		3F4CA60728F36372005CD7F5 /* NotesListInteractorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60628F36372005CD7F5 /* NotesListInteractorMapper.swift */; };
 		3F4CA60928F3657E005CD7F5 /* NotesListPresenterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60828F3657E005CD7F5 /* NotesListPresenterMapper.swift */; };
 		3F4CA60B28F3EB7B005CD7F5 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */; };
@@ -118,7 +103,6 @@
 		3F4CA5FA28F35CAA005CD7F5 /* Array+SafeIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SafeIndex.swift"; sourceTree = "<group>"; };
 		3F4CA5FF28F35CE8005CD7F5 /* CoreDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 		3F4CA60228F36053005CD7F5 /* NotesListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListViewDataSource.swift; sourceTree = "<group>"; };
-		3F4CA60428F36081005CD7F5 /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		3F4CA60628F36372005CD7F5 /* NotesListInteractorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListInteractorMapper.swift; sourceTree = "<group>"; };
 		3F4CA60828F3657E005CD7F5 /* NotesListPresenterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListPresenterMapper.swift; sourceTree = "<group>"; };
 		3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
@@ -353,8 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */,
-				3F4CA60428F36081005CD7F5 /* NoteModel.swift */,
-				3F4CA60228F36053005CD7F5 /* NotesListViewDataSource.swift */,
 				4208997D893DA72A95580498 /* Configurator */,
 				EC8F97293CB8480E2D192F92 /* View */,
 				0DB383267FF3FF699730A87B /* Interactor */,
@@ -413,6 +395,7 @@
 			children = (
 				3F4CA5ED28F330EF005CD7F5 /* NotesListView.swift */,
 				80B2ED3696F6360AD0C9AC97 /* NotesListViewController.swift */,
+				3F4CA60228F36053005CD7F5 /* NotesListViewDataSource.swift */,
 				3F4CA60A28F3EB7B005CD7F5 /* NoteTableViewCell.swift */,
 			);
 			path = View;
@@ -515,9 +498,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 3F4CA58C28F2FC68005CD7F5;
 					};
-					3F4CA61128FAB74F005CD7F5 = {
-						CreatedOnToolsVersion = 14.0.1;
-					};
 				};
 			};
 			buildConfigurationList = 3F4CA58828F2FC68005CD7F5 /* Build configuration list for PBXProject "NotesTest" */;
@@ -539,7 +519,6 @@
 				3F4CA58C28F2FC68005CD7F5 /* NotesTest */,
 				3F4CA5A528F2FC6A005CD7F5 /* NotesTestTests */,
 				3F4CA5AF28F2FC6A005CD7F5 /* NotesTestUITests */,
-				3F4CA61128FAB74F005CD7F5 /* Periphery */,
 			);
 		};
 /* End PBXProject section */
@@ -596,23 +575,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		3F4CA61528FAB768005CD7F5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = " periphery scan --project NotesTest.xcodeproj --schemes NotesTest --targets NotesTest\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -647,7 +609,6 @@
 				3F4CA5FC28F35CAA005CD7F5 /* UIView+SafeAnchors.swift in Sources */,
 				3F4CA60728F36372005CD7F5 /* NotesListInteractorMapper.swift in Sources */,
 				3F4CA60D28F3EF1A005CD7F5 /* ModuleContract.swift in Sources */,
-				3F4CA60528F36081005CD7F5 /* NoteModel.swift in Sources */,
 				3F4CA5E528F31C59005CD7F5 /* List+CoreDataProperties.swift in Sources */,
 				3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */,
 				3F4CA5E728F31C59005CD7F5 /* Note+CoreDataProperties.swift in Sources */,
@@ -950,24 +911,6 @@
 			};
 			name = Release;
 		};
-		3F4CA61228FAB74F005CD7F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FH9R39U9P3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		3F4CA61328FAB74F005CD7F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FH9R39U9P3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1003,15 +946,6 @@
 			buildConfigurations = (
 				3F4CA5C128F2FC6A005CD7F5 /* Debug */,
 				3F4CA5C228F2FC6A005CD7F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F4CA61428FAB74F005CD7F5 /* Build configuration list for PBXAggregateTarget "Periphery" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F4CA61228FAB74F005CD7F5 /* Debug */,
-				3F4CA61328FAB74F005CD7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
