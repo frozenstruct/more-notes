@@ -22,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let viewController = NotesListModuleConfigurator().make(
 			with: NotesListDependency(
 				coreDataService: CoreDataService(),
-				dataSource: NotesListViewDataSourceImp()
+				dataSource: NotesListViewDataSourceImp(),
+                colorMapper: NotesListColorMapper(),
+                notesListPresenterMapper: NotesListPresenterMapper()
 			)
 		)
 

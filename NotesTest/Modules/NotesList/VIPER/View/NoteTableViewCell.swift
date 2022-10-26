@@ -35,7 +35,7 @@ final class NoteTableViewCell: UITableViewCell {
         label.font = .footer
         return label
     }()
-    
+
 	// MARK: Initialization
 
 	override init(

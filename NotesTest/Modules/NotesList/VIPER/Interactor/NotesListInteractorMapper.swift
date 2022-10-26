@@ -15,12 +15,18 @@ final class NotesListInteractorMapper {
     typealias BackgroundColor = PresenterModel.Color
     typealias PatternColor = PresenterModel.PatternColor
 	typealias NoteRenderConfiguration = PresenterModel.Note
+
+    private let colorMapper: NotesListColorMapper
+
+    init(colorMapper: NotesListColorMapper) {
+        self.colorMapper = colorMapper
+    }
 }
 
 // MARK: - Methods
 
 extension NotesListInteractorMapper {
-	
+
 	func presenterModel(notes: [Note]) -> NotesListPresenterModel {
 		PresenterModel(
 			notes:
@@ -28,8 +34,8 @@ extension NotesListInteractorMapper {
 					NoteRenderConfiguration(
                         title: $0.name ?? .emptyString,
                         body: $0.bodyText ?? .emptyString,
-                        backgroundColor: BackgroundColor.allCases.randomElement()!,
-                        patternColor: PatternColor.allCases.randomElement()!
+                        backgroundColor: colorMapper.randomColor,
+                        patternColor: .LI
                     )
 				}
 		)

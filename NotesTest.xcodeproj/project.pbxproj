@@ -39,6 +39,7 @@
 		3F6232B02906E28C00CBB764 /* CellColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6232AF2906E28C00CBB764 /* CellColors.xcassets */; };
 		3F6232B22906E55200CBB764 /* UIColor+CellColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6232B12906E55200CBB764 /* UIColor+CellColors.swift */; };
 		3FAB47AE3FFF2DA70B08E2C5 /* NotesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39370D58AAE8AA3AC58695D /* NotesListViewTests.swift */; };
+		3FBEB60129092157004CBAEE /* NotesListColorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */; };
 		3FDE177F2907CF5500369251 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE177C2907CF3E00369251 /* SF-Pro-Rounded-Bold.otf */; };
 		3FDE17802907CF5500369251 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE177B2907CF3E00369251 /* SF-Pro-Display-Bold.otf */; };
 		3FDE17812907CF5500369251 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE177D2907CF3E00369251 /* SF-Pro-Text-Bold.otf */; };
@@ -110,6 +111,7 @@
 		3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromClass.swift; sourceTree = "<group>"; };
 		3F6232AF2906E28C00CBB764 /* CellColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CellColors.xcassets; sourceTree = "<group>"; };
 		3F6232B12906E55200CBB764 /* UIColor+CellColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CellColors.swift"; sourceTree = "<group>"; };
+		3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListColorMapper.swift; sourceTree = "<group>"; };
 		3FDE17782907CF3E00369251 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		3FDE17792907CF3E00369251 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		3FDE177A2907CF3E00369251 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
@@ -311,6 +313,27 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		3FBEB5FE29092138004CBAEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3FBEB5FF29092149004CBAEE /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */,
+				4208997D893DA72A95580498 /* Configurator */,
+				EC8F97293CB8480E2D192F92 /* View */,
+				0DB383267FF3FF699730A87B /* Interactor */,
+				0198AACA1E9429D099BE4CBE /* Presenter */,
+				68CAD2DA5356D3445AECADA5 /* Router */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
 		3FDE17772907CF2B00369251 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,12 +359,8 @@
 		5566A01AEAC90300A7FC6AF5 /* NotesList */ = {
 			isa = PBXGroup;
 			children = (
-				3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */,
-				4208997D893DA72A95580498 /* Configurator */,
-				EC8F97293CB8480E2D192F92 /* View */,
-				0DB383267FF3FF699730A87B /* Interactor */,
-				0198AACA1E9429D099BE4CBE /* Presenter */,
-				68CAD2DA5356D3445AECADA5 /* Router */,
+				3FBEB5FE29092138004CBAEE /* Services */,
+				3FBEB5FF29092149004CBAEE /* VIPER */,
 			);
 			path = NotesList;
 			sourceTree = "<group>";
@@ -612,6 +631,7 @@
 				3F4CA5E528F31C59005CD7F5 /* List+CoreDataProperties.swift in Sources */,
 				3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */,
 				3F4CA5E728F31C59005CD7F5 /* Note+CoreDataProperties.swift in Sources */,
+				3FBEB60129092157004CBAEE /* NotesListColorMapper.swift in Sources */,
 				3F4CA5E828F31C59005CD7F5 /* Note+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

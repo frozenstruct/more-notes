@@ -8,7 +8,7 @@
 // MARK: - NotesListPresenterModel
 
 struct NotesListPresenterModel {
-    
+
     let notes: [Self.Note]
 }
 
@@ -31,7 +31,7 @@ extension NotesListPresenterModel {
 
     /// Sets note cell background color alongside with pattern color
     enum Color: String, CaseIterable {
-        
+
         case skies
         case leaf
         case sun

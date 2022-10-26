@@ -22,7 +22,7 @@ final class NotesListModuleConfigurator {
 		let interactor = NotesListInteractor(
 			notesStore:
 				input.notesStore,
-			mapper: NotesListInteractorMapper()
+            mapper: NotesListInteractorMapper(colorMapper: NotesListColorMapper())
 		)
 
 		view.output = viewController

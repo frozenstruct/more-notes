@@ -15,51 +15,51 @@ extension UIColor {
         UIColor(named: #function) ?? .black.withAlphaComponent(0.6)
     }
 
-    static var bark: UIColor     {
+    static var bark: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var barkLI: UIColor   {
+    static var barkLI: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var barkLR: UIColor   {
+    static var barkLR: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var leaf: UIColor     {
+    static var leaf: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var leafLI: UIColor   {
+    static var leafLI: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var leafLR: UIColor   {
+    static var leafLR: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var skies: UIColor    {
+    static var skies: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var skiesLI: UIColor  {
+    static var skiesLI: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var skiesLR: UIColor  {
+    static var skiesLR: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var sun: UIColor      {
+    static var sun: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var sunLI: UIColor    {
+    static var sunLI: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 
-    static var sunLR: UIColor    {
+    static var sunLR: UIColor {
         UIColor(named: #function) ?? .defaultColor
     }
 }

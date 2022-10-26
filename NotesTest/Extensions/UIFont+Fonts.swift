@@ -67,4 +67,3 @@ extension UIFont {
         ) ?? .systemFont(ofSize: Constants.defaultFontSize)
     }
 }
-
