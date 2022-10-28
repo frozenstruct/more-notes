@@ -6,6 +6,20 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3F171DD7290BC1E600DB03B9 /* Peripehery */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F171DDA290BC1E600DB03B9 /* Build configuration list for PBXAggregateTarget "Peripehery" */;
+			buildPhases = (
+				3F171DDB290BC1E900DB03B9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Peripehery;
+			productName = Peripehery;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		018F5A20445F77819C276003 /* NotesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD51D895D2BE2CA714F86E97 /* NotesListRouter.swift */; };
 		2B8156AF13E911929906270F /* NotesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800593D836E24F3231DEFD0 /* NotesListPresenter.swift */; };
@@ -37,7 +51,7 @@
 		3F4CA60D28F3EF1A005CD7F5 /* ModuleContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */; };
 		3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */; };
 		3F6232B02906E28C00CBB764 /* CellColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6232AF2906E28C00CBB764 /* CellColors.xcassets */; };
-		3F6232B22906E55200CBB764 /* UIColor+CellColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6232B12906E55200CBB764 /* UIColor+CellColors.swift */; };
+		3F92B879290BC66800B54C7B /* UIColor+CellColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92B878290BC66800B54C7B /* UIColor+CellColors.swift */; };
 		3FAB47AE3FFF2DA70B08E2C5 /* NotesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39370D58AAE8AA3AC58695D /* NotesListViewTests.swift */; };
 		3FBEB60129092157004CBAEE /* NotesListColorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */; };
 		3FDE177F2907CF5500369251 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE177C2907CF3E00369251 /* SF-Pro-Rounded-Bold.otf */; };
@@ -110,7 +124,7 @@
 		3F4CA60C28F3EF1A005CD7F5 /* ModuleContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleContract.swift; sourceTree = "<group>"; };
 		3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromClass.swift; sourceTree = "<group>"; };
 		3F6232AF2906E28C00CBB764 /* CellColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CellColors.xcassets; sourceTree = "<group>"; };
-		3F6232B12906E55200CBB764 /* UIColor+CellColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CellColors.swift"; sourceTree = "<group>"; };
+		3F92B878290BC66800B54C7B /* UIColor+CellColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CellColors.swift"; sourceTree = "<group>"; };
 		3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListColorMapper.swift; sourceTree = "<group>"; };
 		3FDE17782907CF3E00369251 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		3FDE17792907CF3E00369251 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -298,9 +312,9 @@
 				3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */,
 				3F4CA5F728F35CAA005CD7F5 /* UIApplication+Extensions.swift */,
 				3F4CA5F928F35CAA005CD7F5 /* UIApplication+TopViewController.swift */,
-				3F6232B12906E55200CBB764 /* UIColor+CellColors.swift */,
 				3FDE17862907D08D00369251 /* UIFont+Fonts.swift */,
 				3F4CA5F828F35CAA005CD7F5 /* UIView+SafeAnchors.swift */,
+				3F92B878290BC66800B54C7B /* UIColor+CellColors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,6 +520,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					3F171DD7290BC1E600DB03B9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 					3F4CA58C28F2FC68005CD7F5 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -538,6 +555,7 @@
 				3F4CA58C28F2FC68005CD7F5 /* NotesTest */,
 				3F4CA5A528F2FC6A005CD7F5 /* NotesTestTests */,
 				3F4CA5AF28F2FC6A005CD7F5 /* NotesTestUITests */,
+				3F171DD7290BC1E600DB03B9 /* Peripehery */,
 			);
 		};
 /* End PBXProject section */
@@ -577,6 +595,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F171DDB290BC1E900DB03B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/homebrew/bin/periphery scan --project NotesTest.xcodeproj --schemes NotesTest --targets NotesTest --format xcode --clean-build\n";
+		};
 		3F4CA5D728F310A2005CD7F5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,7 +649,7 @@
 				3F4CA5F528F35C33005CD7F5 /* CoreDataService.swift in Sources */,
 				3F4CA60B28F3EB7B005CD7F5 /* NoteTableViewCell.swift in Sources */,
 				CD75A8B66823E197C334DFE5 /* NotesListViewController.swift in Sources */,
-				3F6232B22906E55200CBB764 /* UIColor+CellColors.swift in Sources */,
+				3F92B879290BC66800B54C7B /* UIColor+CellColors.swift in Sources */,
 				2B8156AF13E911929906270F /* NotesListPresenter.swift in Sources */,
 				3F4CA5FE28F35CAA005CD7F5 /* Array+SafeIndex.swift in Sources */,
 				3F4CA60028F35CE8005CD7F5 /* CoreDataError.swift in Sources */,
@@ -685,6 +720,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F171DD8290BC1E600DB03B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59RDP58P84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F171DD9290BC1E600DB03B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59RDP58P84;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3F4CA5B828F2FC6A005CD7F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -934,6 +987,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F171DDA290BC1E600DB03B9 /* Build configuration list for PBXAggregateTarget "Peripehery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F171DD8290BC1E600DB03B9 /* Debug */,
+				3F171DD9290BC1E600DB03B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F4CA58828F2FC68005CD7F5 /* Build configuration list for PBXProject "NotesTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

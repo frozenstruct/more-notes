@@ -12,8 +12,6 @@ import Foundation
 final class NotesListInteractorMapper {
 
 	typealias PresenterModel = NotesListPresenterModel
-    typealias BackgroundColor = PresenterModel.Color
-    typealias PatternColor = PresenterModel.PatternColor
 	typealias NoteRenderConfiguration = PresenterModel.Note
 
     private let colorMapper: NotesListColorMapper
