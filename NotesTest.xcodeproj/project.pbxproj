@@ -52,6 +52,7 @@
 		3F4CA61728FABABA005CD7F5 /* StringFromClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */; };
 		3F6232B02906E28C00CBB764 /* CellColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6232AF2906E28C00CBB764 /* CellColors.xcassets */; };
 		3F92B879290BC66800B54C7B /* UIColor+CellColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92B878290BC66800B54C7B /* UIColor+CellColors.swift */; };
+		3F92B87B290BC80800B54C7B /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92B87A290BC80800B54C7B /* NoteListViewModel.swift */; };
 		3FAB47AE3FFF2DA70B08E2C5 /* NotesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39370D58AAE8AA3AC58695D /* NotesListViewTests.swift */; };
 		3FBEB60129092157004CBAEE /* NotesListColorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */; };
 		3FDE177F2907CF5500369251 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE177C2907CF3E00369251 /* SF-Pro-Rounded-Bold.otf */; };
@@ -125,6 +126,7 @@
 		3F4CA61628FABABA005CD7F5 /* StringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromClass.swift; sourceTree = "<group>"; };
 		3F6232AF2906E28C00CBB764 /* CellColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CellColors.xcassets; sourceTree = "<group>"; };
 		3F92B878290BC66800B54C7B /* UIColor+CellColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CellColors.swift"; sourceTree = "<group>"; };
+		3F92B87A290BC80800B54C7B /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		3FBEB60029092157004CBAEE /* NotesListColorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListColorMapper.swift; sourceTree = "<group>"; };
 		3FDE17782907CF3E00369251 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		3FDE17792907CF3E00369251 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 		EC8F97293CB8480E2D192F92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F92B87A290BC80800B54C7B /* NoteListViewModel.swift */,
 				3F4CA5ED28F330EF005CD7F5 /* NotesListView.swift */,
 				80B2ED3696F6360AD0C9AC97 /* NotesListViewController.swift */,
 				3F4CA60228F36053005CD7F5 /* NotesListViewDataSource.swift */,
@@ -656,6 +659,7 @@
 				8C326BFFCD4D21554343E173 /* NotesListInteractor.swift in Sources */,
 				3F4CA5EE28F330EF005CD7F5 /* NotesListView.swift in Sources */,
 				3F4CA5FB28F35CAA005CD7F5 /* UIApplication+Extensions.swift in Sources */,
+				3F92B87B290BC80800B54C7B /* NoteListViewModel.swift in Sources */,
 				3F4CA60928F3657E005CD7F5 /* NotesListPresenterMapper.swift in Sources */,
 				018F5A20445F77819C276003 /* NotesListRouter.swift in Sources */,
 				AA3437D7DA1A2BF6A6F17CF8 /* NotesListConfigurator.swift in Sources */,

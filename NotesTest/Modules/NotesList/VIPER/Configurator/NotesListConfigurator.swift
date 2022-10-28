@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - NotesListModuleConfigurator
+
 final class NotesListModuleConfigurator {
 
 	/// Creates the module

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - General Usage Static Strings
+
 extension String {
 
 	static let emptyString = ""

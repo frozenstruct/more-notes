@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - App Fonts
+
 extension UIFont {
 
     private enum Constants {

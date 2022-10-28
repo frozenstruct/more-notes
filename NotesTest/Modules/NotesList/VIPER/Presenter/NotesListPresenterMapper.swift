@@ -5,11 +5,14 @@
 //  Created by Dmitry Aksyonov on 09.10.2022.
 //
 
-// MARK: - NotesListPresenterMapper
 
 import UIKit
 
+// MARK: - NotesListPresenterMapper
+
 final class NotesListPresenterMapper {
+
+    // MARK: Subtypes
 
     typealias NoteModel = NotesListPresenterModel.Note
     typealias ViewModel = NotesListViewModel
@@ -33,22 +36,5 @@ extension NotesListPresenterMapper {
                 )
             }
         )
-    }
-}
-
-struct NotesListViewModel {
-
-    let cells: [Cell]
-
-}
-
-extension NotesListViewModel {
-
-    struct Cell {
-
-        let title: String
-        let body: String
-        let backgroundColor: UIColor
-        let patternColor: UIColor
     }
 }

@@ -11,10 +11,14 @@ import Foundation
 
 final class NotesListInteractorMapper {
 
+    // MARK: Subtypes
+
 	typealias PresenterModel = NotesListPresenterModel
 	typealias NoteRenderConfiguration = PresenterModel.Note
 
     private let colorMapper: NotesListColorMapper
+
+    // MARK: Initialization
 
     init(colorMapper: NotesListColorMapper) {
         self.colorMapper = colorMapper

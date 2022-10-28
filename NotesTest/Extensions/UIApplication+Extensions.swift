@@ -12,7 +12,7 @@ import CoreData
 
 extension UIApplication {
 
-    var managedContext: NSManagedObjectContext? {
+    var managedContext: NSManagedObjectContext! {
         guard let delegate = UIApplication.shared.delegate as? AppDelegate
         else {
             return nil

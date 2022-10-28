@@ -5,6 +5,8 @@
 //  Created by Dmitry Aksyonov on 19.06.2022.
 //
 
+// MARK: - Safe Index Access
+
 extension Array {
 
     subscript(safe index: Int) -> Element? {

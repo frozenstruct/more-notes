@@ -5,6 +5,8 @@
 //  Created by Dmitry Aksyonov on 26.10.2022.
 //
 
+// MARK: - NotesListColorMapper
+
 final class NotesListColorMapper {
 
     typealias Color = NotesListPresenterModel.Color
